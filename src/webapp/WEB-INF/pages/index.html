@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<div>
+    <th:block th:each="msg : ${messages}">
+        <h1 th:text="${msg}"></h1>
+    </th:block>
+
+</div>
+<div>
+<table style="border: red solid 1px" >
+    <th:block>
+        <th><a href="/cars?count=1">Car1</a></th>
+        <th><a href="/cars?count=2">Car2</a></th>
+        <th><a href="/cars?count=3">Car3</a></th>
+        <th><a href="/cars?count=0">Car0</a></th>
+    </th:block>
+</table>
+</div>
+</body>
+</html>
